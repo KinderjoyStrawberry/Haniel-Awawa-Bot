@@ -1,0 +1,17 @@
+{
+    "name": "haniel-awawa-bot",
+    "version": "1.0.0",
+    "description": "haniel-bot",
+    "main": "index.js",
+    "scripts": {
+        "test": "index.js"
+    },
+    "author": "KinderjoyStrawberry",
+    "license": "Kinderjoy",
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "discord.js": "^13.6.0",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3"
+    }
+}
