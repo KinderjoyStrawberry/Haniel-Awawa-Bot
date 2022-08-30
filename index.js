@@ -63,19 +63,6 @@ client.on("messageCreate", (msg) => {
     }
 })
 
-// client.on("messageCreate", (message) => {
-//     // JUST SAY HI TO THE BOT
-//     if (message.content == "hi") {
-//         message.reply(`Hello there! >///< ${message.author}`)
-//             // WHEN ASKING TO MABAR MELER
-//     } else if (message.content == "p mabar") {
-//         message.reply("MABAR KIDS <@&908276644932890674>")
-//             // WHEN TAGGED
-//     } else if (message.mentions.has(client.user.id)) {
-//         message.reply(`Apa sih, maaf tapi aku milik Kinderjoy seorang :heart:`)
-//     }
-// })
-
 // BOT DISCORD STATUS 
 client.on(`ready`, async() => {
     let server = await client.guilds.cache.size
