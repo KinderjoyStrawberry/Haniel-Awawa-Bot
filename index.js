@@ -3,7 +3,8 @@ require("dotenv").config()
 
 // KEEP ALIVE BOT
 const keepAlive = require("./server")
-const PREFIX = "h"
+const PREFIX = "h!"
+const helpBot = require("./help")
 
 const client = new discord.Client({
     intents: [
@@ -34,7 +35,8 @@ client.on("ready", () => {
 // RESPONSE BOT FROM CHAT
 client.on("messageCreate", (msg) => {
     if (msg.author.bot) return
-    if (!msg.content.startsWith(PREFIX)) msg.reply("Please use \"h\" first when using bot master! (≧▽≦)")
+    if (!msg.content.startsWith(PREFIX)) return
+        // msg.reply("Please use \"h!\" first when using bot master! (≧▽≦)")
     let arg = msg.content.substring(PREFIX.length).split(" ")
         // let pingBot = msg.mentions.has(client.user.id)
 
@@ -49,9 +51,13 @@ client.on("messageCreate", (msg) => {
 
             } else if (arg[0] === "Ping") {
                 msg.reply(`H-hi master! >///< ${msg.author}`)
+            } else {
+                msg.reply("Command not found!, please check h!Help first master")
             }
             break;
 
+        case " ":
+            break;
         default:
             break;
     }
