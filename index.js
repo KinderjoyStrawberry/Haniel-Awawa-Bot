@@ -71,7 +71,7 @@ client.on(`ready`, async() => {
     const activities = [
         `Loading....`,
         `Hi master! Haniel at your service (≧▽≦)`,
-        `Maid at ${server}24 servers`,
+        `Im Under Development`,
         `Now looking at ${serverCount} people...`,
         `Follow My Master : https://github.com/KinderjoyStrawberry`,
         `Online 24/7, i'm ready to serve!`
